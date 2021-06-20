@@ -1,0 +1,159 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap');
+
+.container{
+    width: 75%;
+    margin: 0  auto;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container h1{
+    font-family: 'Viaoda Libre', cursive;
+    font-size: 100px;
+}
+
+.row-1, .row-2, .row-3{
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.row-1 img{
+    margin: 5px;
+}
+
+.row-1, .row-2, .row-3{
+    background: url('table.jpg') center no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.row-1 img{
+    width: 25%;
+}
+
+.row-1 div{
+    border: 1px solid black;
+    padding: 15px;
+    min-height: 350px;
+    text-align: center;
+    width: 50%;
+}
+
+.row-2 button{
+    margin: 5px;
+}
+
+table, th, td{
+    padding: 5px;
+    border: 1px solid black;
+    text-align: center;
+}
+
+th{
+    background-color: coral;
+}
+td{
+    background-color: yellow;
+}
+
+
+@media(max-width: 1300px){
+    .container h1{
+        font-size: 80px;
+    }
+}
+
+@media(max-width: 1200px){
+    .container{
+        width: 90%;
+    }
+}
+
+@media(max-width: 1000px){
+    .container h1{
+        font-size: 60px;
+    }
+    .heading img{
+        transform: scale(0.65);
+    }
+}
+
+@media(max-width: 750px){
+    .container h1{
+        font-size: 55px;
+    }
+    .heading #img2{
+        display: none;
+    }
+}
+
+@media(max-width: 700px){
+    .row-1 div{
+        min-height: 250px;
+    }
+}
+
+@media(max-width: 600px){
+    .container{
+        width: 100%;
+    }
+}
+
+@media(max-width: 500px){
+    .container h1{
+        font-size: 45px;
+    }
+    .heading #img1{
+        display: none;
+    }
+}
+
+@media(max-width: 450px){
+    .row-1 h2{
+        font-size: 25px;
+    }
+    .row-1 div{
+        min-height: 200px;
+    }
+    .container h1{
+        font-size: 35px;
+    }
+}
+
+@media(max-width: 350px){
+    .row-1 h2{
+        font-size: 18px;
+    }
+    .row-2 button{
+        padding: 10px;
+    }
+    .row-1 div{
+        min-height: 180px;
+    }
+    .container h1{
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 300px){
+    .row-1 h2{
+        font-size: 15px;
+    }
+    #your-score, #dealer-score{
+        font-size: 15px;
+    }
+    .row-2 button{
+        padding: 5px;
+    }
+}
